@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Participant Information Sheet</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    #downloads {
+      display: none;
+      margin-top: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+    }
+
+    a {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Participant Information Sheet</h1>
+
+  <p>
+    Thank you for your interest in participating in our study.
+    Please read the information below carefully.
+  </p>
+
+  <p>
+    [Insert your full PIS content here — including purpose of the study, data usage, and participant rights.]
+  </p>
+
+  <label>
+    <input type="checkbox" id="consentCheckbox" />
+    I have read and agree to participate in this study.
+  </label>
+
+  <div id="downloads">
+    <h2>Download Files</h2>
+    <a href="downloads/file1.zip" download>Download File 1</a>
+    <a href="downloads/file2.zip" download>Download File 2</a>
+    <a href="downloads/file3.zip" download>Download File 3</a>
+  </div>
+
+  <script>
+    const checkbox = document.getElementById('consentCheckbox');
+    const downloads = document.getElementById('downloads');
+
+    checkbox.addEventListener('change', function () {
+      downloads.style.display = this.checked ? 'block' : 'none';
+    });
+  </script>
+
+</body>
+</html>
