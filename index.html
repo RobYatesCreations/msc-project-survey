@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MSc Project Survey</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    #downloads {
+      display: none;
+      margin-top: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+    }
+
+    a {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>MSc Project Survey</h1>
+  <h2>Participant Information Sheet</h2>
+
+  <p>
+    Thank you for your interest in participating in this study.
+    Please read the information below carefully.
+  </p>
+
+  <p>
+    <p><b>Study title:</b> A comparative analysis of video game development: Classical methods, AI-Assisted, and fully generative approaches</p>
+     <p><b>Lead researcher:</b> Robert Yates, PGT student, MSc Advanced Computer Science, University of Kent</p>
+     <p><b>Supervisor:</b> Professor Shujun Li, Professor of Cyber Security, University of Kent</p>
+     <p><b>Ethics approval:</b> TBD</p>
+     <p><b>Contacts:</b></p>
+     <p><ul>
+        <li>Lead Researcher: rgy3@kent.ac.uk</li>
+        <li>Project Supervisor: s.j.li@kent.ac.uk</li>
+        <li>The University Ethics Committee Contact: centralresearchethicss@kent.ac.uk, r.o.kafali@kent.ac.uk</li>
+        </ul></p>
+  </p>
+
+  <hr />
+    <b>What is the purpose of the study?</b>
+    <p>You are invited to take part in an online play test event (similar to a game jam) designed to evaluate user experience and system usability across three short games. Your responses to two standardised questionnaires—the System Usability Scale (SUS) and the User Experience Questionnaire (UEQ)—will help us understand how different development treatments (e.g., varying levels of AI use) influence player experience.</p>
+    <b>Why have I been invited?</b>
+    <p>Recruitment is conducted via email and social media posts shared by the lead researcher. The invitation is open to anyone who sees the post and wishes to take part. Some invitees may be friends, family, or fellow students of the researcher; participation is entirely voluntary.</p>
+    
+    <b>Do I have to take part?</b>
+    <p>No. Participation is completely voluntary. If you choose not to take part, simply do not tick the consent box or submit any questionnaires—there are no consequences. Within the games, all questionnaire screens are skippable.</p>
+    
+    <b>What will I be asked to do if I take part?</b>
+    <p>
+      <ul>
+        <li>Visit the session webpage during the activation window and review this PIS.</li>
+        <li>Provide explicit consent by ticking the consent checkbox to unlock/download the games.</li>
+        <li>This study only provides Windows 10 platform support.</li>
+        <li>Play up to three short games.</li>
+        <li>In-Game, after each session, you will be asked to complete a brief SUS and UEQ survey (approximately 5 minutes per game). Each survey submission includes a second brief consent checkbox for that specific data submission.</li>
+        <li>All questionnaires are skippable by clicking the button "skip" on screen.</li>
+      </ul>
+    </p>
+    <b>Can I withdraw?</b>
+    <p>You may withdraw at any point before submitting a questionnaire by closing the game or not ticking the consent/submit checkbox. Because no identifying information is collected, once a survey is submitted, it cannot be linked back to you and therefore cannot be removed from the dataset. This limitation is highlighted here, on the consent screen, and next to the submission form.</p>
+    
+    <b>What data will you collect?</b>
+    <p>
+      <ul>
+        <li>SUS, UEQ item responses and LLM (Large Language Model) treatment level used in the game's development only.</li>
+        <li>No names, email addresses, aliases, timestamps, IP addresses, or other metadata are stored.</li>
+        <li>In-game alias entered for gameplay is not connected to the survey database.</li>
+        </ul>
+    </p>
+    <b>How will my data be kept confidential?</b>
+    <p>Data are anonymised at source: no personal or indirectly identifying information is recorded. Responses are transmitted directly to a private server controlled by the researcher and stored in an access-restricted database. Only the researcher (and, if needed, the academic supervisor) will have access.</p>
+    
+    <b>How long will my data be kept?</b>
+    <p>Data will be retained in perpetuity, privately and securely, for analysis and auditing purposes only.</p>
+    
+    <b>Are there any risks or benefits?</b>
+    <p><b>Risks:</b> A prior risk assessment indicated negligible psychological, physical, social, or reputational risk. The games are casual—no horror or hyper-violent content. You may skip any question or stop playing at any time if you feel uncomfortable.</p>
+    <p><b>Benefits:</b> There is no direct personal benefit; however, your participation contributes to the research in this study.</p>
+    
+    <b>Will I be paid?</b>
+    <p>No. There is no payment or material incentive. Participation is without obligation and carries no penalty for non participation.</p>
+  <p>
+    <b>How will the results be used?</b>
+    <p>Findings will be reported in the Master’s dissertation and any subsequent academic outputs. No individual will be identifiable. A summary will be made available on the participant website at a later date.</p>
+  </p>
+
+  <label>
+    <input type="checkbox" id="consentCheckbox" />
+    I have read and agree to participate in this study.
+  </label>
+
+  <div id="downloads">
+    <h2>Download Files</h2>
+    <a href="downloads/file1.zip" download>Download File 1</a>
+    <a href="downloads/file2.zip" download>Download File 2</a>
+    <a href="downloads/file3.zip" download>Download File 3</a>
+  </div>
+
+  <script>
+    const checkbox = document.getElementById('consentCheckbox');
+    const downloads = document.getElementById('downloads');
+
+    checkbox.addEventListener('change', function () {
+      downloads.style.display = this.checked ? 'block' : 'none';
+    });
+  </script>
+
+</body>
+</html>
